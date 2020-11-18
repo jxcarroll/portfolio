@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Currency Converter (AJAX)</title>
+    <meta charset ="utf-8"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"></script>
+   <!-- <link rel="stylesheet" href="/validaition/css/validation.css"> -->
+</head>
+<body>
+    <form id="Currency" novalidate="novalidate" onsubmit="return false">
+    <div class="formcontainer">
+      <h1>Currency Converter History(AJAX)</h1>
+      <fieldset>
+        <legend>Currency Value</legend>
+        <br>
+        <label>Base Currency:</label>
+        <select name="Base" id="Basecurrency" data-rule-required="true" data-msg-required="Required" >
+            <option value="">Select Base </option>
+            <option value="USD">United States Dollar</option>
+            <option value="TWD">New Taiwan Dollar</option>
+            <option value="EUR">EURO</option>
+            <option value="CHF">Swiss Franc</option>
+            <option value="HKD">Hong Kong Dollar</option>
+          </select>
+          <label id="BasecurrencyMsg" class="error" for="Basecurrency" style="display:none;">Required</label>
+          <span id="BasecurrencyMsg"></span>
+          <br><br>     
+         
+        <label for="formlabel" class="formlabel">Convert to Currency:</label>
+        <select name="Convert_to" id="Convert_tocurrency" data-rule-required="true" data-msg-required="Required" class="error">
+            <option value="">Select Conversion</option>
+            <option value="USD">United States Dollar</option>
+            <option value="TWD">New Taiwan Dollar</option>
+            <option value="EUR">EURO</option>
+            <option value="CHF">Swiss Franc</option>
+            <option value="HKD">Hong Kong Dollar</option>
+          </select>
+
+          <label id="Convert_tocurrencyMsg" class="error" for="Convert_tocurrency" style="display:none;">Required</label>
+           <span id="Convert_tocurrencyMsg"></span>
+          <br><br>
+       
+       
+      
+        <label for="formlabel" class="formlabel">From Date:</label>
+        <input type="date" id="Date_from" name="Date_from" data-rule-required="true" data-msg-required="Required" data-msg-number="required" aria-required="true">
+        
+       <label for="Date_from" class="error" id="Date_fromMsg"> </label><br><br>
+    
+       <label class="formlabel" for="Date_to">To Date:</label>
+        <input type="date" id="Date_to" name="Date_to" data-rule-required="true" data-msg-required="Required" data-msg-number="required" aria-required="true">
+       <label class="error" for="Date_to" id="Date_toMsg"> </label>
+        <br><br>
+        
+        
+        
+        
+        <label for="Result" class="formlabel">Show Results: </label>
+        <span id="Result"></span><br><br>
+
+        <input type="submit" value="Show Results" name="Show Results" onclick="Calculate();" >
+          
+        <input type="button" value="Clear" name="Clear" onclick="clearform();">
+
+        <canvas id="chartjs-0" width="400" height="400" style="display: block; height: 400px; width: 400px;" > 
+      </fieldset>
+        
+    </div>
+  </form>
+<script src= "test.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+<script src="chart.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+ </body>
+</html>

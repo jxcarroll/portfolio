@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Jazmine Rover</title>
+    <link rel="stylesheet" href="/JTAC/assets/css/app.css">
+    <link rel="stylesheet" href="mars.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+      <header>
+      
+      </header>
+    <form id="Mars" onsubmit="return false">
+    <div class="grid-container">
+      <div class="grid-x grid-padding-x">
+      <div class="large-12 cell">  
+        <h1> Mars Rover Photo Explorer</h1>    
+
+    <table>
+        <thread>   
+        <tr>
+          <th scope="col">Rover</th>
+          <th scope="col">Mission Start</th>
+          <th scope="col">Misson End</th>
+        </tr>
+        </thread>
+        <tbody>
+        <tr>
+          <td>Curiosity</td>
+          <td>08/06/2012</td>
+          <td>09/28/2019</td>
+        </tr>
+        <tr>
+          <td>Opportunity</td>
+          <td>01/26/2004</td>
+          <td>06/11/2018</td>
+        </tr>
+        <tr>
+          <td>Spirit</td>
+          <td>01/05/2004</td>
+          <td>03/21/2004</td>
+        </tr>
+        </tbody>
+      </table>
+          </div>
+        </div>
+      </div>
+    
+   
+    <h2>Select a rover and a picture date:</h2>
+        <div class="grid-x grid-padding-x">
+              <div class="large-6 medium-6 cell">
+                <label class="formlabel">Rover:</label>
+
+                <label for "rovercuriosity">
+                <input type="radio" name="rover" value="curiosity" id="rovercuriosity" data-rule-required="true" data-msg-required="Required" onchange="DefaultDate()" aria-required="true" class="valid">
+                Curiosity
+                </label>
+
+                <label for="roveropportunity">
+                <input type="radio" name="rover" value="opportunity" id="roveropportunity" onchange="DefaultDate()" aria-required="true" class="valid">Opportunity
+                </label>
+
+                <label for="roverspirit">  
+                <input type="radio" name="rover" value="spirit" id="roverspirit" onchange="DefaultDate()" aria-required="true" class="valid">Spirit
+                </label>
+                  
+                <label for="rover" class="error" id="roverError" style="display: none"></label>
+              </div>
+
+              <div class="large-6 medium-6 cell">
+                <label class="formlabel">Picture Date:</label>
+                <input type="date" id="picturedate" name="picturedate" data-rule-required="true" data-msg-required="Required"  aria-required="true">
+                <label class="error" for="picturedate" id="picturedateError" style="display: none"> </label>
+             </div>
+         </div>
+      <br>
+      
+        
+    
+     <button class="button" onclick="GetData()">Search</button>
+        
+      <button class="button" onclick="ClearForm()" formnovalidate>Clear</button>
+      
+    <!--Empty Image placeholders-->  
+<div class="grid-container">
+  <div class="grid-x grid-padding-x">
+  <div class="large-12 cell"> 
+   <p id="photos"></p>
+    <a id="anchor0"  target="_blank"><img id="image0"  class="MarsPhoto" class="thumbnail" height="200" width="200"></a>
+		<a id="anchor1"  target="_blank"><img id="image1"  class="MarsPhoto" class="thumbnail" height="200" width="200"></a>
+		<a id="anchor2"  target="_blank"><img id="image2"  class="MarsPhoto" class="thumbnail" height="200" width="200"></a>
+		<a id="anchor3"  target="_blank"><img id="image3"  class="MarsPhoto" class="thumbnail" height="200" width="200"></a>
+		<a id="anchor4"  target="_blank"><img id="image4"  class="MarsPhoto" class="thumbnail" height="200" width="200"></a>
+		<a id="anchor5"  target="_blank"><img id="image5"  class="MarsPhoto" class="thumbnail" height="200" width="200"></a>
+		<a id="anchor6"  target="_blank"><img id="image6"  class="MarsPhoto" class="thumbnail" height="200" width="200"></a>
+		<a id="anchor7"  target="_blank"><img id="image7"  class="MarsPhoto" class="thumbnail" height="200" width="200"></a>
+		<a id="anchor8"  target="_blank"><img id="image8"  class="MarsPhoto" class="thumbnail" height="200" width="200"></a>
+		<a id="anchor9"  target="_blank"><img id="image9"  class="MarsPhoto" class="thumbnail" height="200" width="200"></a>
+		<a id="anchor10" target="_blank"><img id="image10" class="MarsPhoto" class="thumbnail" height="200" width="200"></a>
+		<a id="anchor11" target="_blank"><img id="image11" class="MarsPhoto" class="thumbnail" height="200" width="200"></a>
+		<a id="anchor12" target="_blank"><img id="image12" class="MarsPhoto" class="thumbnail" height="200" width="200"></a>
+		<a id="anchor13" target="_blank"><img id="image13" class="MarsPhoto" class="thumbnail" height="200" width="200"></a>
+		<a id="anchor14" target="_blank"><img id="image14" class="MarsPhoto" class="thumbnail" height="200" width="200"></a>
+		<a id="anchor15" target="_blank"><img id="image15" class="MarsPhoto" class="thumbnail" height="200" width="200"></a>
+		<a id="anchor16" target="_blank"><img id="image16" class="MarsPhoto" class="thumbnail" height="200" width="200"></a>
+		<a id="anchor17" target="_blank"><img id="image17" class="MarsPhoto" class="thumbnail" height="200" width="200"></a>
+		<a id="anchor18" target="_blank"><img id="image18" class="MarsPhoto" class="thumbnail" height="200" width="200"></a>
+		<a id="anchor19" target="_blank"><img id="image19" class="MarsPhoto" class="thumbnail" height="200" width="200"></a>
+		<a id="anchor20" target="_blank"><img id="image20" class="MarsPhoto" class="thumbnail" height="200" width="200"></a>
+		<a id="anchor21" target="_blank"><img id="image21" class="MarsPhoto" class="thumbnail" height="200" width="200"></a>
+		<a id="anchor22" target="_blank"><img id="image22" class="MarsPhoto" class="thumbnail" height="200" width="200"></a>
+		<a id="anchor23" target="_blank"><img id="image23" class="MarsPhoto" class="thumbnail" height="200" width="200"></a>
+		<a id="anchor24" target="_blank"><img id="image24" class="MarsPhoto" class="thumbnail" height="200" width="200"></a>         
+      </div>      
+      </div>
+      </div>
+      </form>
+  </body>
+
+  <footer>
+  </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"></script>
+    <script src="mars.js"></script>
+  </html>
