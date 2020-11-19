@@ -25,12 +25,12 @@ font-family: 'Marck Script', cursive;
     display: block;
     color: white;
 }
-div.card{
+.card{
     background:#DEDC8C;
 }
-ul.dropdownmenu{
+.dropdown-menu{
     background:none;
 }
-div.topbar{
+.topbar{
     background:#FADD9D;
 }
