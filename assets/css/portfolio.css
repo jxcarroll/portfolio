@@ -18,3 +18,10 @@ font-family: 'Marck Script', cursive;
 font:'Marck Script';
 font-family: 'Marck Script', cursive;
 }
+.hide{
+    display:none;
+}
+.info1:hover + .hide{
+    display: block;
+    color: white;
+}
