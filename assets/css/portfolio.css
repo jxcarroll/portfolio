@@ -53,3 +53,10 @@ background:;
      display:block;
     color:grey;
 }
+.thumbnail{
+    height: 250px;
+    width: 250px;
+}
+.thumbnails{
+    size:60%;
+}
