@@ -30,14 +30,23 @@ background:#FADD9D;
     display: block;
     color: white;
 }
+.card-divider{
+   background:#FADD9D  
+}
 .card{
     background:#FADD9D;
+}
+.callout{
+    background:#FADD9D; 
 }
 .dropdown-menu{
     background:none;
 }
 .top-bar{
     background:#9DBEFA;
+}
+.dropdown.menu{
+    background:#9DBEFA; 
 }
 .hide{
     display:none;
