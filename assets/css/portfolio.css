@@ -17,7 +17,7 @@ font-family: 'Marck Script', cursive;
 .quote{
 font:'Marck Script';
 font-family: 'Marck Script', cursive;
-background:;
+background:#FADD9D;
 }
 .profile{
     width: 300px;
@@ -31,13 +31,13 @@ background:;
     color: white;
 }
 .card{
-    background:#DEDC8C;
+    background:#FADD9D;
 }
 .dropdown-menu{
     background:none;
 }
-.topbar{
-    background:#FADD9D;
+.top-bar{
+    background:#9DBEFA;
 }
 .hide{
     display:none;
@@ -57,6 +57,6 @@ background:;
     height: 250px;
     width: 250px;
 }
-.thumbnails{
-    size:60%;
+.profile{
+    size:80%;
 }
