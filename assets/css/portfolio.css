@@ -14,12 +14,6 @@ font-family: 'Patrick Hand', cursive;
 menu-text{
 font-family: 'Marck Script', cursive;
 }
-i{
-    color:white;
-}
-icon{
-    color:white; 
-}
 .fa-home:before{
     color:white;
 }
@@ -54,7 +48,7 @@ background:#FADD9D;
 .callout{
     background:#FADD9D; 
 }
-a.dropdown{
+a.dropdown.menu{
     color: white;
 }
 .dropdown-menu{
