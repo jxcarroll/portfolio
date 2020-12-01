@@ -17,6 +17,9 @@ font-family: 'Marck Script', cursive;
 .i{
     color:white;
 }
+.fa-external-link-square-alt:before {
+    color:white;
+}
 .fa-home:before{
     color:white;
 }
