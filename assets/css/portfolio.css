@@ -8,11 +8,14 @@ font-family: 'Raleway', sans-serif;
 h1{
 font-family: 'Merienda One', cursive;
 }
-h2{
+h2, h3, h4{
 font-family: 'Patrick Hand', cursive;
 }
 menu-text{
 font-family: 'Marck Script', cursive;
+}
+i{
+    color:white;
 }
 .quote{
 font:'Marck Script';
