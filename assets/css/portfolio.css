@@ -43,10 +43,12 @@ background:#FADD9D;
     background:none;
 }
 .top-bar{
-    background:#9DBEFA;
+    background: #9DBEFA;
+    color: white;
 }
 .dropdown.menu{
     background:#9DBEFA; 
+    color: white;
 }
 .hide{
     display:none;
